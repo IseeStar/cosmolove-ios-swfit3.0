@@ -1,0 +1,28 @@
+# Uncomment this line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'DZProjectswift' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+pod 'Alamofire'
+pod 'Kingfisher'
+
+
+
+
+
+# Pods for DZProjectswift
+
+target 'DZProjectswiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+end
+
+target 'DZProjectswiftUITests' do
+    inherit! :search_paths
+    # Pods for testing
+end
+
+
+end
