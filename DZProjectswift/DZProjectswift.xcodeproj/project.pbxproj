@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		42EBF06E10886385DFC11C27 /* Pods_DZProjectswiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A425754EFF9FF982AD326B9D /* Pods_DZProjectswiftTests.framework */; };
+		5456BEA71EEE746F00B5FBAF /* DZMainTBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5456BEA31EEE746F00B5FBAF /* DZMainTBController.swift */; };
 		54B8C7531EE7CA2700A68677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8C7521EE7CA2700A68677 /* AppDelegate.swift */; };
 		54B8C75A1EE7CA2800A68677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B8C7591EE7CA2800A68677 /* Assets.xcassets */; };
 		54B8C75D1EE7CA2800A68677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B8C75B1EE7CA2800A68677 /* LaunchScreen.storyboard */; };
 		54B8C7681EE7CA2800A68677 /* DZProjectswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8C7671EE7CA2800A68677 /* DZProjectswiftTests.swift */; };
 		54B8C7731EE7CA2800A68677 /* DZProjectswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8C7721EE7CA2800A68677 /* DZProjectswiftUITests.swift */; };
-		54B8C78B1EE9654800A68677 /* DZMainTBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8C7881EE9654800A68677 /* DZMainTBController.swift */; };
 		6BEC71A0D2E04FFE08EDE9B1 /* Pods_DZProjectswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC733BEBD2ACDB0AC9F5A8F3 /* Pods_DZProjectswift.framework */; };
 		EF8F644B651AE2538D0F6F4B /* Pods_DZProjectswiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC447167A023815BC293DF1E /* Pods_DZProjectswiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		456D35C658C0AD71EE823AA6 /* Pods-DZProjectswiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZProjectswiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZProjectswiftTests/Pods-DZProjectswiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		5456BEA31EEE746F00B5FBAF /* DZMainTBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMainTBController.swift; sourceTree = "<group>"; };
 		54B8C74F1EE7CA2700A68677 /* DZProjectswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZProjectswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B8C7521EE7CA2700A68677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54B8C7591EE7CA2800A68677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		54B8C76E1EE7CA2800A68677 /* DZProjectswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZProjectswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B8C7721EE7CA2800A68677 /* DZProjectswiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DZProjectswiftUITests.swift; sourceTree = "<group>"; };
 		54B8C7741EE7CA2800A68677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54B8C7881EE9654800A68677 /* DZMainTBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMainTBController.swift; sourceTree = "<group>"; };
 		6D11A8B61B917151C9E2621E /* Pods-DZProjectswiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZProjectswiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZProjectswiftUITests/Pods-DZProjectswiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C79321C6E881EF2311545A1 /* Pods-DZProjectswift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZProjectswift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZProjectswift/Pods-DZProjectswift.release.xcconfig"; sourceTree = "<group>"; };
 		936E4FF7F139B590314669CC /* Pods-DZProjectswiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZProjectswiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZProjectswiftTests/Pods-DZProjectswiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +97,142 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5456BE951EEE746F00B5FBAF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5456BE9A1EEE746F00B5FBAF /* Home */,
+				5456BE961EEE746F00B5FBAF /* Busines */,
+				5456BE9E1EEE746F00B5FBAF /* Inspiration */,
+				5456BEA51EEE746F00B5FBAF /* Showlove */,
+				5456BEA41EEE746F00B5FBAF /* Mine */,
+				5456BEA21EEE746F00B5FBAF /* Main */,
+				5456BEA61EEE746F00B5FBAF /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5456BE961EEE746F00B5FBAF /* Busines */ = {
+			isa = PBXGroup;
+			children = (
+				5456BE971EEE746F00B5FBAF /* Model */,
+				5456BE981EEE746F00B5FBAF /* View */,
+				5456BE991EEE746F00B5FBAF /* ViewModel */,
+			);
+			path = Busines;
+			sourceTree = "<group>";
+		};
+		5456BE971EEE746F00B5FBAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5456BE981EEE746F00B5FBAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5456BE991EEE746F00B5FBAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5456BE9A1EEE746F00B5FBAF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5456BE9B1EEE746F00B5FBAF /* Model */,
+				5456BE9C1EEE746F00B5FBAF /* View */,
+				5456BE9D1EEE746F00B5FBAF /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5456BE9B1EEE746F00B5FBAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5456BE9C1EEE746F00B5FBAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5456BE9D1EEE746F00B5FBAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5456BE9E1EEE746F00B5FBAF /* Inspiration */ = {
+			isa = PBXGroup;
+			children = (
+				5456BE9F1EEE746F00B5FBAF /* Model */,
+				5456BEA01EEE746F00B5FBAF /* View */,
+				5456BEA11EEE746F00B5FBAF /* ViewModel */,
+			);
+			path = Inspiration;
+			sourceTree = "<group>";
+		};
+		5456BE9F1EEE746F00B5FBAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5456BEA01EEE746F00B5FBAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5456BEA11EEE746F00B5FBAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5456BEA21EEE746F00B5FBAF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5456BEA31EEE746F00B5FBAF /* DZMainTBController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5456BEA41EEE746F00B5FBAF /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		5456BEA51EEE746F00B5FBAF /* Showlove */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Showlove;
+			sourceTree = "<group>";
+		};
+		5456BEA61EEE746F00B5FBAF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		54B8C7461EE7CA2700A68677 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +258,7 @@
 		54B8C7511EE7CA2700A68677 /* DZProjectswift */ = {
 			isa = PBXGroup;
 			children = (
-				54B8C7831EE9654800A68677 /* Classes */,
+				5456BE951EEE746F00B5FBAF /* Classes */,
 				54B8C7521EE7CA2700A68677 /* AppDelegate.swift */,
 				54B8C7591EE7CA2800A68677 /* Assets.xcassets */,
 				54B8C75B1EE7CA2800A68677 /* LaunchScreen.storyboard */,
@@ -147,62 +283,6 @@
 				54B8C7741EE7CA2800A68677 /* Info.plist */,
 			);
 			path = DZProjectswiftUITests;
-			sourceTree = "<group>";
-		};
-		54B8C7831EE9654800A68677 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				54B8C7851EE9654800A68677 /* Home */,
-				54B8C7841EE9654800A68677 /* Busines */,
-				54B8C7861EE9654800A68677 /* Inspiration */,
-				54B8C78A1EE9654800A68677 /* Showlove */,
-				54B8C7891EE9654800A68677 /* Mine */,
-				54B8C7871EE9654800A68677 /* Main */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		54B8C7841EE9654800A68677 /* Busines */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Busines;
-			sourceTree = "<group>";
-		};
-		54B8C7851EE9654800A68677 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		54B8C7861EE9654800A68677 /* Inspiration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Inspiration;
-			sourceTree = "<group>";
-		};
-		54B8C7871EE9654800A68677 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				54B8C7881EE9654800A68677 /* DZMainTBController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		54B8C7891EE9654800A68677 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		54B8C78A1EE9654800A68677 /* Showlove */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Showlove;
 			sourceTree = "<group>";
 		};
 		84A47FEB0208DF562B91B910 /* Pods */ = {
@@ -489,7 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B8C78B1EE9654800A68677 /* DZMainTBController.swift in Sources */,
+				5456BEA71EEE746F00B5FBAF /* DZMainTBController.swift in Sources */,
 				54B8C7531EE7CA2700A68677 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
